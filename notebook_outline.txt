@@ -1,0 +1,62 @@
+Notebook Outline: pre_processing.ipynb
+
+1. Introduction
+   - Notebook appears to be a data preprocessing script for 3D printing job data
+   - Contains a link to open in Google Colab
+
+2. Data Overview
+   - Dataset contains 54 columns with various fields related to 3D printing jobs
+   - Key columns and their dimensions:
+     * Name: String - Name of the print job
+     * Subitems: String/List - Related components or parts of the main print
+     * Tech Staff: String - Assigned technical staff member
+     * Job Status: Categorical - Current status of the print job
+     * Select Printer: Categorical - Type of printer selected for the job
+     * Slicer Project File: URL - Link to the 3D model/slicer file
+     * Payment Status: Categorical - Status of payment (e.g., "Pending Payment")
+     * User Name: String - Name of the user requesting the print
+     * Printer Requested: Categorical - Specific printer model requested
+     * Print ID: Numeric - Unique identifier for the print job
+     * Job Time Tracking: Time - Duration of the print job
+     * Creation Log: String/Timestamp - Log of job creation and modifications
+     * Archive Date: Date - When the job was archived
+     * Reason for Print: String - Purpose of the print job
+     * Staff Assisting: String - Staff members who assisted with the job
+     * Delay Count: Numeric - Number of delays encountered
+     * Print Count: Numeric - Number of times the job has been printed
+
+3. Data Structure
+   - The data appears to be in a tabular format
+   - Contains both categorical and numerical data
+   - Some fields contain URLs (e.g., Slicer Project File links)
+   - Contains timestamps and status tracking information
+   - Data types present:
+     * String/Text fields
+     * Categorical variables
+     * Numeric values
+     * Date/Time stamps
+     * URLs
+     * Boolean/Status indicators
+
+4. Data Processing Features
+   - Includes tracking of print jobs
+   - Payment status monitoring
+   - Staff assignment tracking
+   - Print count and delay tracking
+   - Time tracking for jobs
+   - Processing dimensions:
+     * Temporal: Date Added, Archive Date, Job Time Tracking
+     * Financial: Payment Status, Materials Fee Status
+     * Operational: Print Count, Delay Count, Job Status
+     * Personnel: Tech Staff, Staff Assisting, User Name
+     * Technical: Printer Selection, Slicer Project Files
+
+5. Additional Notes
+   - The dataset appears to be from a makerspace or 3D printing facility
+   - Contains sensitive information (user names, payment status)
+   - Includes both active and archived job records
+   - Data quality considerations:
+     * Some fields contain NaN values
+     * Mixed data types in some columns
+     * Potential for duplicate entries
+     * Time-based data requires proper formatting 
